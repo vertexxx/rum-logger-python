@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rum-logger"
+version = "0.3.1"
+description = "Raw Unified Multistream Logger for CAN FD, Ethernet/tshark, and camera capture"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Markus W." },
+]
+dynamic = ["dependencies"]
+
+[project.scripts]
+rum-logger = "rumlogger_main:run"
+
+[tool.setuptools]
+py-modules = [
+    "FileUploadThread",
+    "PCANBasic",
+    "capture_eth",
+    "capture_peak_canfd",
+    "capture_stream",
+    "capture_tshark",
+    "capture_vector_canfd",
+    "capture_video",
+    "rumlogger_main",
+    "video_device_utils",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
