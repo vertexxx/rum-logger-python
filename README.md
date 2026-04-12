@@ -45,6 +45,12 @@ Start the application with:
 rum-logger
 ```
 
+Lokal:
+<img width="642" height="870" alt="image" src="https://github.com/user-attachments/assets/98888033-316a-47e9-9230-95dec0acf354" />
+
+Backend:
+<img width="602" height="907" alt="image" src="https://github.com/user-attachments/assets/bf2ff2a1-f6d7-42c2-a273-8679afd94034" />
+
 
 
 
