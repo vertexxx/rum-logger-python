@@ -1,4 +1,5 @@
-# R.U.M.-Logger
+# RAW UNIFIED MULTISTREAM LOGGER
+## R.U.M.-Logger
 
 Simultaneous raw recorder for UDP/Ethernet packets (tshark), CAN FD bus data (Vector and Peak devices), and reference cameras. Each measurement is saved in a timestamped subfolder for later conversion and evaluation.
 
