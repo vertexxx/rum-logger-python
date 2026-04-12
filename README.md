@@ -68,7 +68,12 @@ python rumlogger_main.py \
 
 Use `--stream-log` to capture one or more HTTP or HTTPS responses into separate files inside the measurement folder. Pass a comma-separated list or repeat the option, for example: `python rumlogger_main.py --stream-log "http://172.16.250.248:4241/Display_FID.events,http://172.16.250.248:4241/Display_CID.events"`. Each URL starts its own thread and writes the received bytes into a file named from the URL path such as `Display_FID.events` and `Display_CID.events`. Finite responses are written once and closed; long-lived streaming responses keep appending until the logger exits.
 
-<img width="639" height="866" alt="image" src="https://github.com/user-attachments/assets/e5892c3a-e8a4-4333-b823-79935d79e129" />
+Lokal:
+<img width="642" height="870" alt="image" src="https://github.com/user-attachments/assets/98888033-316a-47e9-9230-95dec0acf354" />
+
+Backend:
+<img width="602" height="907" alt="image" src="https://github.com/user-attachments/assets/bf2ff2a1-f6d7-42c2-a273-8679afd94034" />
+
 
 
 
