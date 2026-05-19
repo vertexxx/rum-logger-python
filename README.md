@@ -7,8 +7,25 @@ Uploads are sent to the URL in `RUM_BACKEND`. HTTPS uploads accept self-signed c
 
 Live status JSON files and camera preview PNGs are written to `./uploads/`, which is intended to stay out of version control.
 
+## Configuration for Vector devices
+
+Open "Vector Hardware config"
+Add a new Application called "python-can"
+Assign new Application "pythnon-can CAN 1" channel to your desired hardware channel
+
+<img width="457" height="387" alt="image" src="https://github.com/user-attachments/assets/255864fd-ba06-4a9e-8f8b-9d8f8af59469" />
+
 ## Example
 
+### Minimal / Precompiled 
+Start downloaded executable "rumlogger_main.exe" from releases (https://github.com/vertexxx/rum-logger-python/releases) with doubleclick
+
+The custom start options are also usable for the executable 
+```powershell
+.\rumlogger_main.exe --stream-log "http://172.16.250.248:4241/Display_FID.events,http://172.16.250.248:4241/Display_CID.events"
+```
+
+### Custom / Python
 ```powershell
 python rumlogger_main.py `
   --video-device-startindex 1 `
